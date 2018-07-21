@@ -1,22 +1,30 @@
 <template lang='pug'>
 #app
   LanguageSelector
-  img(src='./assets/logo.png')
-  | {{ $t('message') }}
-  HelloWorld(msg='Welcome to Your Vue.js App')
+  TheHeader
+  main
+    FunctionSelector
+    FunctionDetail
+  TheFooter
 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeader from './components/TheHeader.vue'
+import TheFooter from './components/TheFooter.vue'
 import LanguageSelector from './components/LanguageSelector.vue'
+import FunctionSelector from './components/FunctionSelector.vue'
+import FunctionDetail from './components/FunctionDetail.vue'
 import { lstore } from './utils'
 
 export default {
-  name: 'App',
+  name: 'LodashHelper',
   components: {
-    HelloWorld,
+    TheHeader,
+    TheFooter,
     LanguageSelector,
+    FunctionSelector,
+    FunctionDetail,
   },
   created () {
     this.setDefaultLanguage()
@@ -30,3 +38,21 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="stylus">
+#app
+  height 100%
+  display flex
+  flex-direction column
+  justify-content space-between
+
+  header
+  footer
+    flex none
+
+  main
+    flex auto
+    display flex
+    justify-content space-between
+
+</style>
