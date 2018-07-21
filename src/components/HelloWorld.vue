@@ -34,8 +34,8 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
-  }
+    msg: { type: String, default: '' },
+  },
 }
 </script>
 
@@ -54,4 +54,5 @@ li
 
 a
   color #42b983
+
 </style>

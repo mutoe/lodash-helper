@@ -9,14 +9,14 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
 }
 </script>
 
-<style lang="stylus">
+<style lang='stylus'>
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
@@ -24,4 +24,5 @@ export default {
   text-align center
   color #2c3e50
   margin-top 60px
+
 </style>
