@@ -15,6 +15,7 @@ export default {
   },
   methods: {
     choose (lang) {
+      document.title = this.$t('page.title')
       this.$i18n.locale = lang
       lstore.set('lang', lang)
     },
@@ -25,15 +26,15 @@ export default {
 <style lang="stylus" scoped>
 .language-selector
   position absolute
-  top 4px
-  right 4px
+  top $sm
+  right @top
   display flex
   flex-direction: row-reverse
   font-size 14px
   color: #aaa
 
   > *
-    margin-right 4px
+    margin-left (@top / 2)
     cursor pointer
 
     &.active

@@ -15,7 +15,6 @@ import TheFooter from './components/TheFooter.vue'
 import LanguageSelector from './components/LanguageSelector.vue'
 import FunctionSelector from './components/FunctionSelector.vue'
 import FunctionDetail from './components/FunctionDetail.vue'
-import { lstore } from './utils'
 
 export default {
   name: 'LodashHelper',
@@ -27,13 +26,11 @@ export default {
     FunctionDetail,
   },
   created () {
-    this.setDefaultLanguage()
+    this.initApp()
   },
   methods: {
-    setDefaultLanguage () {
-      const lang = lstore.get('lang')
-      console.log(lang)
-      console.log(this.$t('message'))
+    initApp () {
+      document.title = this.$t('page.title')
     },
   },
 }
@@ -45,6 +42,7 @@ export default {
   display flex
   flex-direction column
   justify-content space-between
+  padding $sm
 
   header
   footer

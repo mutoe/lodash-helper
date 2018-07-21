@@ -4,7 +4,7 @@ import i18n from './i18n'
 
 import './registerServiceWorker'
 import 'normalize.css'
-import './assets/app.styl'
+import './stylus/index.styl'
 
 Vue.config.productionTip = false
 
