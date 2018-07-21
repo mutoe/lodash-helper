@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
@@ -17,6 +18,7 @@
     "@vue/cli-plugin-pwa": "^3.0.0-rc.5",
     "@vue/cli-service": "^3.0.0-rc.5",
     "@vue/eslint-config-standard": "^3.0.0-rc.5",
+    "conventional-changelog-cli": "^2.0.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "stylus": "^0.54.5",
