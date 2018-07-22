@@ -14,4 +14,7 @@ export default {
 .function-detail
   flex auto
 
+  p
+    margin 0
+
 </style>
