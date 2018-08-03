@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - stable
+
+cache: yarn
+
+script:
+  - yarn lint
+
+before_deploy:
+  - yarn build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  local-dir: ${TRAIS_BUILD_DIR}/dist
+  fqdn: lodash.mutoe.com
+  on:
+    branch: master
