@@ -1,17 +1,17 @@
 <template lang='pug'>
-.function-detail
-  p this is function detail
+.method-detail
+  p this is method detail
 
 </template>
 
 <script>
 export default {
-  name: 'FunctionDetail',
+  name: 'MethodDetail',
 }
 </script>
 
 <style scoped lang="stylus">
-.function-detail
+.method-detail
   flex auto
 
   p

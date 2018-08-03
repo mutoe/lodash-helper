@@ -1,5 +1,5 @@
 <template lang='pug'>
-.function-selector
+.method-selector
   p {{$t('page.i_have_a')}}
   select(v-model='type')
     option(value='...' disabled) ...
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'FunctionSelector',
+  name: 'MethodSelector',
   data () {
     return {
       type: [],
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.function-selector
+.method-selector
   flex none
   width 20em
 

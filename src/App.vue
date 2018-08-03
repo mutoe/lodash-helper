@@ -3,8 +3,8 @@
   LanguageSelector
   TheHeader
   main
-    FunctionSelector
-    FunctionDetail
+    MethodSelector
+    MethodDetail
   TheFooter
 
 </template>
@@ -13,8 +13,8 @@
 import TheHeader from './components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue'
 import LanguageSelector from './components/LanguageSelector.vue'
-import FunctionSelector from './components/FunctionSelector.vue'
-import FunctionDetail from './components/FunctionDetail.vue'
+import MethodSelector from './components/MethodSelector.vue'
+import MethodDetail from './components/MethodDetail.vue'
 
 export default {
   name: 'LodashHelper',
@@ -22,8 +22,8 @@ export default {
     TheHeader,
     TheFooter,
     LanguageSelector,
-    FunctionSelector,
-    FunctionDetail,
+    MethodSelector,
+    MethodDetail,
   },
   created () {
     this.initApp()
