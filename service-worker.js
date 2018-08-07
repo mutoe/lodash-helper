@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.cd0af39f7547e9b823c9dfc391c1903f.js"
+  "/precache-manifest.4070d68bf3ce3b27453894885db1aad8.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "lodash-helper"});
