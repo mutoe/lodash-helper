@@ -5,7 +5,7 @@ import { lstore } from './utils'
 Vue.use(VueI18n)
 
 function loadLocaleMessages () {
-  const locales = require.context('./locales', true, /[a-z0-9]+\.json$/i)
+  const locales = require.context('./locales', true, /[a-z0-9]+\.yml$/i)
   const messages = {}
   locales.keys().forEach(key => {
     const matched = key.match(/([a-z0-9]+)\./i)
