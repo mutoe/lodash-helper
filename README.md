@@ -1,6 +1,6 @@
 # lodash-helper
 
-[![Travis (.org)](https://img.shields.io/travis/mutoe/lodash-helper.svg?style=flat-square)](https://www.travis-ci.org/mutoe/lodash-helper)
+[![Travis (.org)](https://img.shields.io/travis/mutoe/lodash-helper.svg?style=flat-square)](https://www.travis-ci.org/mutoe/lodash-helper) [![Greenkeeper badge](https://badges.greenkeeper.io/mutoe/lodash-helper.svg)](https://greenkeeper.io/)
 
 > A lodash helper progress web application.
 
